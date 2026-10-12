@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+
+/*
+Typical Device Breakpoints
+--------------------------
+Pequenas: até 600px
+Celular: 600px ~ 768px
+Tablet: 768px ~ 992px
+Desktop: 992px ~ 1200px
+Grandes: acima de 1200px
+*/
+
+/*Como tenho um arquivo CSS na metodologia Mobile First, basta que eu faça uma configuração para um tamanho mínimo de 768px (Tablet) e tamanho máximo não especificado. Assim, essa configuração irá contemplar todos os outros dispositivos:*/
+
+@media screen and (min-width: 768px) {
+    span#burger {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display: inline-block;
+    }
+    main, article{
+        width: 700px;
+    }
+}
